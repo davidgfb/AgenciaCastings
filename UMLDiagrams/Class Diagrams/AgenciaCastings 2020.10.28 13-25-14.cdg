@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="AgenciaCastings">
+  <ClassDiagramComponents>
+    <Class name="Actividad" package="modelo.actividad" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ActividadModa" package="modelo.actividad" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ActividadPublicidadCine" package="modelo.actividad" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Actor" package="modelo" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="AgenciaCastings" package="modelo" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Candidato" package="modelo" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Casting" package="modelo.Casting" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="CastingOnline" package="modelo.Casting" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="CastingPresencial" package="modelo.Casting" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Cliente" package="modelo.cliente" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields>
+        <Field name="codigoCliente" type="String" visibility="package"/>
+        <Field name="telefono" type="int" visibility="package"/>
+        <Field name="personaContacto" type="PersonaContacto" visibility="package"/>
+        <Field name="tipoActividad" type="Actividad" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ClienteEmpresasModa" package="modelo.cliente" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ClienteEmpresasPublicidadCine" package="modelo.cliente" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="PersonaContacto" package="modelo.cliente" visibility="public" xPosition="1220.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Main" package="modelo" visibility="public" xPosition="1520.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Modelo" package="modelo" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Trabajo" package="modelo.trabajo" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="TrabajoCine" package="modelo.trabajo" visibility="public" xPosition="20.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="TrabajoPublicidad" package="modelo.trabajo" visibility="public" xPosition="320.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="modelo.cliente.ClienteEmpresasModa" target="modelo.cliente.Cliente"/>
+    <IsRelation name="is" source="modelo.cliente.ClienteEmpresasPublicidadCine" target="modelo.cliente.Cliente"/>
+    <IsRelation name="is" source="modelo.trabajo.TrabajoCine" target="modelo.trabajo.Trabajo"/>
+    <HasRelation name="tipoActividad" source="modelo.cliente.Cliente" target="modelo.actividad.Actividad" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="modelo.trabajo.TrabajoPublicidad" target="modelo.trabajo.Trabajo"/>
+    <IsRelation name="is" source="modelo.actividad.ActividadModa" target="modelo.actividad.Actividad"/>
+    <IsRelation name="is" source="modelo.actividad.ActividadPublicidadCine" target="modelo.actividad.Actividad"/>
+    <HasRelation name="personaContacto" source="modelo.cliente.Cliente" target="modelo.cliente.PersonaContacto" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
