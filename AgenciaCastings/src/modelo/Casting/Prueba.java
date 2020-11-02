@@ -5,19 +5,10 @@
  */
 package modelo.Casting;
 
-import modelo.Perfil;
-import modelo.cliente.Cliente;
-
 /**
  *
  * @author David
  */
-public class Casting {
-    String codigoCasting = "",
-            nombre = "",
-            descripcion = "",
-            fechaContratacion = "";
-    Cliente cliente;
+public class Prueba {
     double coste = 0;
-    Perfil[] perfiles;
 }

@@ -5,10 +5,16 @@
  */
 package modelo;
 
+import modelo.candidato.Candidato;
+import modelo.cliente.Cliente;
+
 /**
  *
  * @author David
  */
-public class Actor extends Trabajador {
+public class Trabajador extends Candidato {
     
+    void trabaja(Cliente cliente) {
+        
+    }
 }

@@ -3,12 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package modelo;
+package modelo.Casting;
 
 /**
  *
  * @author David
  */
-public class Actor extends Trabajador {
-    
+public class Fase extends CastingPresencial {
+    int numeroFase = 0;
+    String fechaInicio = "";
+    PruebaIndividual[] pruebasIndividuales;
 }

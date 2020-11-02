@@ -5,10 +5,18 @@
  */
 package modelo;
 
+import modelo.cliente.Cliente;
+import modelo.trabajo.Trabajo;
+
 /**
  *
  * @author David
+ * ?
  */
 public class AgenciaCastings {
+    Cliente[] clientes;
     
+    void proporciona(Cliente cliente, Trabajador trabajador, Trabajo trabajo) {
+        
+    }
 }

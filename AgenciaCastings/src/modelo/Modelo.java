@@ -9,6 +9,6 @@ package modelo;
  *
  * @author David
  */
-public class Modelo {
+public class Modelo extends Trabajador {
     
 }

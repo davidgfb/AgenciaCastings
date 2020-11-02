@@ -10,5 +10,5 @@ package modelo.Casting;
  * @author David
  */
 public class CastingPresencial {
-    
+    int nFases = 0; //>0
 }

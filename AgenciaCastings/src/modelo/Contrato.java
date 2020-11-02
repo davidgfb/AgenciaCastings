@@ -5,10 +5,14 @@
  */
 package modelo;
 
+import modelo.candidato.Candidato;
+import modelo.trabajo.Trabajo;
+
 /**
  *
  * @author David
  */
-public class Actor extends Trabajador {
-    
+public class Contrato {
+    Candidato candidato;
+    Trabajo trabajo;
 }

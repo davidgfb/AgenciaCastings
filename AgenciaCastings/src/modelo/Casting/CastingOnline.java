@@ -10,5 +10,7 @@ package modelo.Casting;
  * @author David
  */
 public class CastingOnline {
-    
+    int nPersonas = 0;
+    String fecha = "",
+            plataformaWeb = "";
 }
